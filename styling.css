@@ -7,7 +7,7 @@ body {
   font-family: 'Exo', sans-serif;
 }
 
-.center,figcaption{
+.center,figure,figcaption{
   display:block;
   margin-left:auto;
   margin-right:auto;
