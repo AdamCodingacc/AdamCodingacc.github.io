@@ -66,16 +66,10 @@ P,h1,h2,h3 {
   padding-left: 4%;
 }
 
-img{
+img.one{
   display:block;
   margin-left:auto;
   margin-right:auto;
   height:60%;
   width:40%;
-  }
-@media all and (max-width: 500px) and (orientation:portrait) {
-    img{
-      height:100%;
-      width:75%;
-    }
   }
