@@ -5,11 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Issues with Fusion</title>
 	<link href="./style.css" type="text/css" rel="stylesheet">
-  <style>
-		#container {
-			background: #add8e6;
-		}
-	</style>
 </head>
 
 <body id="body">
@@ -58,11 +53,219 @@
 </div>
 
   <h1>Further Discussion of Operational Issues</h1>
+	<h2>Energy Usage</h2>
   <p>
-
-
+		The most pressing issue of commercial MCF fusion reactors is the immense
+		energy usage needed to ignite the reactor to sustain the plasma's critical
+		temperature and pressure to have a likely probability of successful
+		Deuterium Tritium fuel collision. An example of this is the <a href="./JET.html">JET reactor</a>
+		-based at the Culham Centre for Fusion Energy, which has stated it requires
+		700-800MW of energy <sup><a href="#1">[1]</a></sup> to create and sustain
+		the conditions for fusion. Requiring  many specialised techniques and
+		equipment, including:
+		<ul>
+			<li>Ohmic heating using a transformer to drive current through the plasma
+				against the associated resistance with the plasma and cause heating in
+				the same way a wire gets hot when a current passes through a metal.</li>
+			<li>Injecting accelerated neutral atoms and via collisions with plasma
+				ions transfers kinetic energy.</li>
+			<li>Using beams of high energy microwaves that get absorbed by the plasma causing further heating.</li>
+		</ul>
+		<br><br>
+		Through all of these techniques, the plasma in the core of the Tokamak has
+		temperatures of up to 100x10^6 K, which needs to be confined from the
+		reactor's vessel walls using superconducting magnets (an additional energy
+		drain). When the reactor is at these required conditions, 80% of the energy
+		per successful fusion process is from the production and acceleration of
+		neutrons (the product of the reaction that will allow us eventually to
+		produce electricity). In comparison, 20% goes towards the bi-product of the
+		reaction, namely the production of a Helium atom. The problem with helium
+		production and any energy gained in the fusion process is the Coulomb
+		attraction between the positive protons in the helium atom and the
+		dissociated electrons in the plasma, causing deceleration. To combat this,
+		sustained energy input is needed. <sup><a href="#2">[2]</a></sup>
+		<br><br>
+		The reason for such large energy requirements, even for light element fusion
+		reactions which would require the least amount of energy (i.e.
+		Deuterium-Tritium reactions), comes from the fact that the nucleus has
+		positively charged protons. If two positively charged particles are nearby,
+		they always repel, called Coulomb repulsion. Because of this, D-T reactions
+		require a 10KeV perfusion process (1:1 D-T atoms), which requires a
+		temperature of ~10^8 K <sup><a href="#2">[2]</a></sup> for a likely
+		probability of successful collision.
+		<br><br>
+		Another issue is that while it is theoretically possible to create net
+		energy from a fusion reaction, this is only when the reactor is under
+		pulsed loads. This is the technical term for when the reactor is undergoing
+		nuclear fusion. However, for large amounts of time the reactor is idle and
+		below the critical plasma temperature. During all of this, it is still
+		consuming large amounts of energy needed to run secondary systems
+		maintaining and analysing the reactor. These include:
+		<ul>
+			<li>Cryostats</li>
+			<li>Vacuum pumps</li>
+			<li>Ventilation</li>
+			<li>Safety systems</li>
+			<li>Instruments and sensors</li>
+		</ul>
+		<br><br>
+		The main issue with these secondary components is that they require
+		alternative energy sources (called Auxiliary power using auxiliary systems.)
+		The <a href="./ITER.html">ITER</a> <sup><a href="#1">[1]</a></sup> reactor
+		still requires 120MW for auxiliary systems and 500 MW under pulsed loads. It
+		also states in the current stages of the project 200Mvar is required for
+		pulsed loads and 48Mvar for continuous loads. Mvar is a measure of mega
+		volt-amps, the power usage not being turned into work.
   </p>
 
+	<h2>Radiation Damage to Components and People / Thermal Damage</h2>
+	<p>
+		As stated in the previous section, a fusion reaction aims to produce
+		high-energy neutrons using Deuterium and Tritium as fuel, which, like a
+		traditional power station, will heat a water bath to produce steam to be
+		used as propulsion for a turbine.
+		<br><br>
+		The way that we obtain net energy out of this reaction is these high-energy
+		neutrons. These will collide with the reactor vessel's side as, unlike the
+		plasma/helium ions and electrons, neutrons have no charge so they are
+		unaffected by the magnetic field that contains the plasma. The reactor's
+		side is called a nuclear blanket, a sheet of metal that absorbs the
+		accelerated neutrons' kinetic energy. In doing so, heat is transferred to
+		the metal on impact. By then running a passive water system in contact with
+		this, the water is heated and subsequently produces steam.
+		<br><br>
+		With this comes a major issue with reactors. These neutrons have energy in
+		the range of 14Mev per neutron <sup><a href="#5">[5]</a></sup>. Such high
+		energies can cause an issue as these neutrons can damage the reactor vessel
+		through a myriad of processes <sup><a href="#5">[5]</a></sup>:
+		<ul>
+			<li>Thermally-induced defects weaken and crack plasma-facing materials
+				(the vessel walls the plasma ring is enclosed in). The problem with the
+				high-temperature variation of the inner vessel is fatigue caused by the
+				expansion of the materials as temperature increases and the retraction
+				as it is lowered. This potentially leads to issue's pressurising and
+				sealing the reactor. Stress can induce cracking and weakening for
+				continually operating the reactor under pulsed and idle loads.</li>
+			<li>Oxidation of the heat sink can cause issues as a large amount of heat
+				energy is in contact with a continual water stream. This leads to
+				oxidation of the material and subsequently decreases the heat sink's
+				thermal conduction making it a more inefficient process</li>
+			<li>Neutron-induced degradation of the vessel walls via embrittlement.
+				Embrittlement causes a loss in ductility of a material due to physical
+				damage. (In our case, this is from the high-energy neutron collision,
+				which leads to crack propagation). The most severe form of neutron
+				degradation is transmutation, which is a form of nuclear bombardment.
+				Weaknesses in the material are caused by stress tensors from the
+				collision of neutrons with another material. It may cause the atom it
+				collides with to form an isotope (1 additional neutron in the atom) with
+				different properties to the original materials.</li>
+		</ul>
+		<br><br>
+		If there are successful neutron collisions with instruments and components
+		in the reactor, they become radioactive <sup><a href="#6">[6]</a></sup>.
+		Simultaneously, these do have a shorter half-life compared to nuclear fission
+		waste, and the radioactivity per kg of fuel is smaller than fission<sup><a href="#7">[7]</a></sup>.
+		However, the amount of waste produced is much more significant than in
+		fission due to the fusion reactor requiring such high specification of its
+		components and materials to function at such high temperatures.
+		<br><br>
+		Another consideration of these radioactive materials is for the people
+		operating the nuclear reactors as prolonged exposure to these may pose
+		issues such as radiation sickness or a higher risk of cancer if not properly
+		managed.
+		<br><br>
+		This erosion of materials means that the reactor's expensive and fragile
+		components could become compromised over time, leading to an inefficient or
+		non-functioning reactor. Consequently, regular replacement of various
+		components has to be done, which will severely increase the reactor's
+		running cost. This setback means that commercial viability is unfeasible
+		until this issue is resolved. In addition to this, the cost of properly
+		disposing of this waste so that it does not lead to environmental damage is
+		even greater.
+	</p>
+
+	<h2>Deuterium Tritium supplies</h2>
+	<p>
+		The most promising reactor fuel for viable fusion reactors is deuterium and
+		tritium reactors (D-T reactor), which give a fusion neutron output 100x
+		greater than D-D reactors <sup><a href="#9">[9]</a></sup>. Although the raw
+		energy output from a single fusion process is much greater, there are
+		several drawbacks:
+		Deuterium production is abundant in nature, obtained from seawater<sup><a href="#10">[10]</a></sup>
+		(called heavy water) through chemical processes to extract it from regular
+		water and then further separated by electrolysis to obtain deuterium gas.
+		This means that it is inexpensive and easy to manufacture at a large scale.
+		<br><br>
+		Tritium, however, is much more difficult. It is not found in abundance in
+		nature like deuterium, mainly due to the fact it has such a short half-life
+		of 12.3 years. With current figures, the world supply of Tritium is
+		approximately 20kg. The issue is not only the limited supply, but that most
+		of this comes from massive water extraction, much like deuterium extraction
+		of heavy water, in the CANDU nuclear fission reactor, producing on average
+		1.5 kg a year[6]. This means most of the material for clean fusion power is
+		still coming from a highly polluting source. This is a real issue. It is
+		emphasised by <a href="./ITER.html">ITER</a> saying that reactors running to
+		produce net energy and feedback to the grid would require 300g of Tritium
+		per day to produce 800 MW of electricity<sup><a href="#10">[10]</a></sup>.
+		So one reactor running continuously would deplete a substantial amount of
+		the world's supply on a daily basis.
+		<br><br>
+		One way that current fusion projects worldwide plan to tackle this is to
+		introduce a breeding blanket, which is Tritium's production from high energy
+		neutrons. These are present in the plasma colliding with lithium dosed panels
+		in the shielding to make their fuel and become self-sufficient <sup><a href="#11">[11]</a></sup>.
+		The problem with this is not a practical one but a commercial one.
+		<br><br>
+		The cost of this makes the fuel over $1420/g <sup><a href="#12">[12]</a></sup>,
+		which is quite costly for a high-temperature breeder needed for commercial
+		power production. This has a real impact on the commercial viability of the
+		fusion produced electricity, as accounting for the inefficiencies of heat
+		transfer, the initial energy needed to sustain nuclear fusion, and the
+		relatively low collision rate of D-T atom with the high maintenance cost and
+		fuel shortages at scale makes reactors costly when compared to alternative
+		sustainable energy production methods.
+	</p>
+	<h2>Water Issues</h2>
+	<p>
+		Having already discussed the role water plays as a means of energy production,
+		we can now move onto another critical function being a coolant. This means
+		water is used to remove excess heat from auxiliary systems needed for the
+		reactor to function effectively. For example, in the current <a href="./ITER.html">ITER facility,</a>
+		water is used for both these purposes and is sourced from the Canal de
+		Provence in addition to cooling towers. The problem is when ITER is
+		operational; it requires 12 cubic meters per second to supply the reactor<sup><a href="#x">[x]</a></sup>.
+		The implications of such demands mean any plans to commercialise fusion
+		reactors and to build many such systems worldwide would need to be located
+		near a large body of fresh water. This demand has the potential to cause
+		problems, especially in areas with high levels of drought and limited
+		drinking water.
+		<br><br>
+		In 2014 the university of California did a study on the implications and
+		limitations of using water in fusion power cores and found multiple issues
+		including<sup><a href="#y">[y]</a></sup>:
+		<ul>
+			<li>Untreated freshwater having a relatively 'Low thermal conversion
+				efficiency of 33%' leading to higher cost of electricity in fusion applications.</li>
+			<li>Using water in contact with breeding blankets at such high operating
+				temperatures leads to various chemical reactions. Examples such as solid
+				 breeding blankets containing beryllium (for neutron multiplication) can
+				 react to produce beryllium oxide and hydrogen gas which is highly combustible
+				 (also true for lithium doped materials, another breeding technique).</li>
+		</ul>
+		The potential for a hydrogen gas build due to leaks could pose a hazardous
+		and costly disaster if not properly managed. Furthermore, using high volumes
+		of water near high energy neutrons causes another scenario in which they
+		react to produce deuterium, which can then decay into tritium<sup><a href="#z">[z]</a></sup>.
+		If this is left unprocessed and recycled back into the environment, it could
+		contaminate drinking water supplies or cause harm to the environment — a
+		problem initially associated with PWR fission reactors.
+		<br><br>
+		It should be noted that water has been used in all other commercial reactors
+		up to date, including fission reactors, because it is cheap and easily
+		accessible with an extensive industry infrastructure meaning sophisticated
+		systems can be implemented with little issue. However, more research for its
+		applications in fusion reactors is needed to solve the issues outlined above.
+	</p>
 
 	<p id="1">[1]</p>
 	<p id="2">[2]</p>
