@@ -61,12 +61,12 @@ body {
     background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
   }
 
-P,h1,h2,h3,h5,div{
+P,h1,h2,h3,h5,div,ul{
   padding-right: 0.5%;
   padding-left: 1%;
 }
 
-ul,ol{
+ol{
   padding-right: 3%
   padding-left: 3%
 }
